@@ -81,7 +81,7 @@ namespace ObscureAddress.Utils
 
         public Token Next()
         {
-            ReadToken:
+        ReadToken:
 
             char ch = Test(0);
 

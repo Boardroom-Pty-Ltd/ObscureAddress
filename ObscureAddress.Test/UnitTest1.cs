@@ -1,5 +1,6 @@
 using Microsoft.VisualBasic.FileIO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ObscureAddress.Model;
 using System;
 using System.IO;
 using System.Linq;
@@ -63,33 +64,46 @@ namespace ObscureAddress.Test
             {
                 var investor = new InvestorData
                 {
-                    Id = input[0],
-                    Name = input[1],
-                    Line1 = input[2],
-                    Line2 = input[3],
-                    Line3 = input[4],
-                    Line4 = input[5],
-                    Line5 = input[6],
-                    Line6 = input[7],
-                    Postcode = input[8],
-                    Domicile = input[9]
+                    Id = input[0].Trim(),
+                    Name = input[1].Trim(),
+                    Line1 = input[2].Trim(),
+                    Line2 = input[3].Trim(),
+                    Line3 = input[4].Trim(),
+                    Line4 = input[5].Trim(),
+                    Line5 = input[6].Trim(),
+                    Line6 = input[7].Trim(),
+                    Postcode = input[8].Trim(),
+                    Domicile = input[9].Trim()
                 };
 
                 var result = DataObfuscator.Transform(investor);
                 var expectedResult = new InvestorData
                 {
-                    Id = expectedOutput[0],
-                    Name = expectedOutput[1],
-                    Line1 = expectedOutput[2],
-                    Line2 = expectedOutput[3],
-                    Line3 = expectedOutput[4],
-                    Line4 = expectedOutput[5],
-                    Line5 = expectedOutput[6],
-                    Line6 = expectedOutput[7],
-                    Postcode = expectedOutput[8],
-                    Domicile = expectedOutput[9]
+                    Id = expectedOutput[0].Trim(),
+                    Name = expectedOutput[1].Trim(),
+                    Line1 = expectedOutput[2].Trim(),
+                    Line2 = expectedOutput[3].Trim(),
+                    Line3 = expectedOutput[4].Trim(),
+                    Line4 = expectedOutput[5].Trim(),
+                    Line5 = expectedOutput[6].Trim(),
+                    Line6 = expectedOutput[7].Trim(),
+                    Postcode = expectedOutput[8].Trim(),
+                    Domicile = expectedOutput[9].Trim()
                 };
-                return expectedResult.Equals(result.Data);
+                var finalResult = new InvestorData()
+                {
+                    Id = result.Data.Id.Trim(),
+                    Name = result.Data.Name.Trim(),
+                    Line1 = result.Data.Line1.Trim(),
+                    Line2 = result.Data.Line2.Trim(),
+                    Line3 = result.Data.Line3.Trim(),
+                    Line4 = result.Data.Line4.Trim(),
+                    Line5 = result.Data.Line5.Trim(),
+                    Line6 = result.Data.Line6.Trim(),
+                    Postcode = result.Data.Postcode.Trim(),
+                    Domicile = result.Data.Domicile.Trim()
+                };
+                return expectedResult.Equals(finalResult);
             }
 
             return false;

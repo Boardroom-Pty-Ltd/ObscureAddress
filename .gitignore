@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/ObscureAddress.Test/obj
+/ObscureAddress.Test/bin/Debug/net5.0
+/ObscureAddress/obj
+/ObscureAddress/bin/Debug/net5.0

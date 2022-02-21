@@ -1,0 +1,495 @@
+Turks and Caicos Islands
+Austria
+Bolivia
+Malta
+Montenegro
+Saudi Arabia
+Cambodia
+Peru
+Congo
+Nigeria
+Nicaragua
+Italy
+Belgium
+United States of America
+Vanuatu
+Hungary
+South Georgia and the South Sandwich Islands
+Uganda
+Chile
+Christmas Island
+Afghanistan
+Guadeloupe
+Isle of Man
+Dominican Republic
+Bouvet Island (Bouvetoya)
+Guyana
+Syrian Arab Republic
+Eritrea
+Cyprus
+Western Sahara
+Andorra
+Cook Islands
+Jordan
+Uzbekistan
+Singapore
+Guinea-Bissau
+Fiji
+Mexico
+Mayotte
+Bermuda
+Algeria
+Guatemala
+Saint Pierre and Miquelon
+Taiwan
+Montserrat
+Saint Helena
+Cayman Islands
+Gabon
+Cameroon
+Netherlands
+Sweden
+Mongolia
+Spain
+Ukraine
+Niue
+Iraq
+Norfolk Island
+Rwanda
+Luxembourg
+Tajikistan
+Venezuela
+Solomon Islands
+Puerto Rico
+San Marino
+Barbados
+Estonia
+Macao
+Azerbaijan
+Pitcairn Islands
+Ethiopia
+New Caledonia
+Somalia
+Czech Republic
+Macedonia
+Cuba
+Central African Republic
+Kazakhstan
+New Zealand
+Burundi
+Jersey
+Paraguay
+Anguilla
+Guernsey
+Finland
+Faroe Islands
+Lesotho
+Seychelles
+Samoa
+Gibraltar
+Costa Rica
+Canada
+British Indian Ocean Territory (Chagos Archipelago)
+Mauritius
+Guinea
+Poland
+Holy See (Vatican City State)
+Bosnia and Herzegovina
+Papua New Guinea
+Guam
+Burkina Faso
+Portugal
+Lithuania
+Germany
+India
+Wallis and Futuna
+Niger
+Switzerland
+Bahrain
+Croatia
+Sudan
+Australia
+Comoros
+Malaysia
+Bahamas
+Armenia
+Timor-Leste
+Bulgaria
+Thailand
+Gambia
+Norway
+Madagascar
+Virgin Islands U.S.
+Northern Mariana Islands
+Saint Kitts and Nevis
+Indonesia
+Moldova
+Libyan Arab Jamahiriya
+Dominica
+Mali
+Belarus
+Myanmar
+Heard Island and McDonald Islands
+Turkey
+United Arab Emirates
+Latvia
+Aruba
+Pakistan
+Chad
+Zambia
+French Southern Territories
+Togo
+Honduras
+Djibouti
+Senegal
+Brazil
+Cocos (Keeling) Islands
+Nauru
+Argentina
+Saint Vincent and the Grenadines
+Virgin Islands British
+Bangladesh
+Kenya
+Palau
+Sri Lanka
+Angola
+Saint Barthelemy
+Morocco
+Colombia
+Sierra Leone
+Equatorial Guinea
+Trinidad and Tobago
+Ecuador
+French Guiana
+Kiribati
+Greenland
+Tunisia
+Ireland
+Panama
+Monaco
+Philippines
+Belize
+Greece
+Marshall Islands
+Netherlands Antilles
+Tokelau
+Tuvalu
+Swaziland
+Mozambique
+American Samoa
+Mauritania
+French Polynesia
+Brunei Darussalam
+Botswana
+Saint Martin
+Romania
+Japan
+Antarctica (the territory South of 60 deg S)
+Oman
+Falkland Islands (Malvinas)
+Liberia
+Qatar
+France
+Yemen
+Republic of Korea
+Serbia
+Iran
+Egypt
+Slovenia
+Nepal
+Slovakia (Slovak Republic)
+Liechtenstein
+Palestinian Territory
+Micronesia
+Maldives
+Svalbard & Jan Mayen Islands
+Cote d'Ivoire
+Kuwait
+Uruguay
+Grenada
+Albania
+Hong Kong
+China
+Tonga
+Denmark
+Martinique
+Benin
+Cape Verde
+Sao Tome and Principe
+Suriname
+Ghana
+Malawi
+Russian Federation
+Namibia
+Vietnam
+El Salvador
+Lebanon
+United States Minor Outlying Islands
+Reunion
+Haiti
+Jamaica
+Tanzania
+Lao People's Democratic Republic
+Turkmenistan
+Antigua and Barbuda
+South Africa
+Kyrgyz Republic
+Democratic People's Republic of Korea
+Bhutan
+Israel
+Iceland
+Zimbabwe
+United Kingdom
+Georgia
+Saint Lucia
+GE
+AW
+SM
+MN
+PF
+FR
+BD
+HT
+RS
+SB
+SZ
+SH
+MX
+EE
+GU
+HR
+TH
+RW
+GN
+FJ
+BE
+JO
+BN
+CG
+CC
+IR
+FM
+BY
+LK
+TD
+NG
+GP
+MQ
+GL
+CH
+CV
+JM
+SD
+CI
+MF
+BV
+MT
+BL
+CM
+DK
+BO
+MZ
+ZW
+SI
+MO
+TT
+PG
+IO
+MA
+TF
+DO
+TZ
+CO
+AO
+BF
+CD
+VA
+BH
+IQ
+SV
+AF
+WS
+GF
+IT
+LA
+FO
+TC
+RO
+PE
+BJ
+MH
+KZ
+AM
+GD
+SC
+TM
+PA
+PW
+KM
+SL
+JE
+MY
+QA
+PN
+MV
+GM
+OM
+LC
+NI
+UA
+SO
+BZ
+PK
+KE
+NO
+KH
+NE
+UZ
+CY
+SJ
+ML
+MR
+RU
+IS
+BB
+MG
+AUS
+AU
+TG
+EG
+UG
+MP
+BG
+NR
+PM
+GQ
+WF
+LT
+IL
+CW
+GI
+CR
+BS
+GY
+NZ
+BT
+TV
+ER
+TK
+GA
+MD
+VI
+IE
+EC
+NP
+LU
+BA
+AL
+GH
+LY
+NF
+VN
+SK
+DZ
+SS
+TO
+CZ
+NL
+BW
+KR
+YT
+NU
+CX
+AX
+SR
+GW
+PR
+IM
+ZM
+EH
+HN
+NC
+PY
+ST
+KW
+ZA
+PS
+SGP
+SG
+UY
+AR
+RE
+US
+MS
+GR
+ES
+AG
+BR
+HK
+MK
+TR
+SE
+ID
+KP
+GB
+AS
+JP
+TW
+KI
+PT
+AT
+BQ
+DE
+ME
+KN
+LI
+SN
+TN
+LS
+LV
+MC
+GS
+MU
+HM
+PH
+DJ
+AE
+CL
+AD
+FI
+VE
+MM
+UM
+GT
+BI
+KY
+FK
+KG
+AZ
+SX
+SY
+TL
+LB
+CK
+AQ
+DM
+NA
+VC
+ET
+HU
+MW
+CN
+IN
+GG
+SA
+LR
+CA
+YE
+TJ
+CF
+PL
+CU
+VG
+VU
+BM
+AI

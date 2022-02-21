@@ -541,4 +541,14 @@ Dodges Ferry
 Lancefield
 Palm Island
 Currie
-SINGAPORE
+Singapore
+Sydney
+HopeTown
+BlackBurn
+NSW
+VIC
+QLD
+NT
+ACT
+TAS
+WA
