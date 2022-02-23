@@ -14,7 +14,7 @@ namespace ObscureAddress.Test
 		[TestMethod]
 		public void TestInvestorData()
 		{
-			bool createOutputFile = true;
+			bool createOutputFile = false;
 
 			try
 			{
@@ -25,7 +25,7 @@ namespace ObscureAddress.Test
 				var csvFilePath = dataFilesDirectory.FullName + "\\investor_input.csv";
 				var outputFilePath = dataFilesDirectory.FullName + "\\investor_output.csv";
 				if (!File.Exists(csvFilePath.ToLower()))
-					Assert.Fail("Input file not exists.");
+					Assert.Fail("Investor input file not exists.");
 				if (File.Exists(outputFilePath.ToLower()))
 					File.Delete(outputFilePath);
 
@@ -83,7 +83,7 @@ namespace ObscureAddress.Test
 
 				var csvFilePath = dataFilesDirectory.FullName + "\\crs_input.csv";
 				if (!File.Exists(csvFilePath.ToLower()))
-					Assert.Fail("Directory not exists.");
+					Assert.Fail("CRS input file not exists.");
 
 				var lines = File.ReadAllLines(csvFilePath);
 				if (lines.Length == 0)

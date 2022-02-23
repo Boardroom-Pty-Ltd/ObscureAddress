@@ -4,7 +4,9 @@ using ObscureAddress.Properties;
 using ObscureAddress.Utils;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 
 namespace ObscureAddress
 {
@@ -22,14 +24,31 @@ namespace ObscureAddress
 
 		static DataObfuscator()
 		{
-			ignoreWords = Resources.IgnoreWords.ToUpper().Split(stringSeparators, StringSplitOptions.None).ToList();
-			maleNames = Resources.MaleNames.ToUpper().Split(stringSeparators, StringSplitOptions.None).ToList();
-			femaleNames = Resources.FemaleNames.ToUpper().Split(stringSeparators, StringSplitOptions.None).ToList();
-			surNames = Resources.Surnames.ToUpper().Split(stringSeparators, StringSplitOptions.None).ToList();
-			streetNames = Resources.StreetNames.ToUpper().Split(stringSeparators, StringSplitOptions.None).ToList();
-			townNames = Resources.TownNames.ToUpper().Split(stringSeparators, StringSplitOptions.None).ToList();
-			countryNames = Resources.CountryNames.ToUpper().Split(stringSeparators, StringSplitOptions.None).ToList();
-			nouns = Resources.Nouns.ToUpper().Split(stringSeparators, StringSplitOptions.None).ToList();
+			ignoreWords = ReadResources("IgnoreWords.txt");
+			maleNames = ReadResources("MaleNames.txt");
+			femaleNames = ReadResources("FemaleNames.txt");
+			surNames = ReadResources("Surnames.txt");
+			streetNames = ReadResources("StreetNames.txt");
+			townNames = ReadResources("TownNames.txt");
+			countryNames = ReadResources("CountryNames.txt");
+			nouns = ReadResources("Nouns.txt");
+		}
+
+		private static List<string> ReadResources(string fileName)
+		{
+			string result = string.Empty;
+			var assembly = Assembly.GetExecutingAssembly();
+			var resourceName = typeof(DataObfuscator).Namespace + ".Resources." + fileName;
+			using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+			using (StreamReader reader = new StreamReader(stream))
+			{
+				result = reader.ReadToEnd();
+			}
+
+			if (!string.IsNullOrEmpty(result))
+				return result.ToUpper().Split(stringSeparators, StringSplitOptions.None).ToList();
+			else
+				return new List<string>();
 		}
 
 		public static Result<InvestorData> Transform(InvestorData original)

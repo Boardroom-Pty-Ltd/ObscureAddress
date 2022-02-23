@@ -5,6 +5,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\CountryNames.txt" />
+    <None Remove="Resources\FemaleNames.txt" />
+    <None Remove="Resources\IgnoreWords.txt" />
+    <None Remove="Resources\MaleNames.txt" />
+    <None Remove="Resources\Nouns.txt" />
+    <None Remove="Resources\StreetNames.txt" />
+    <None Remove="Resources\Surnames.txt" />
+    <None Remove="Resources\TownNames.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\CountryNames.txt" />
+    <EmbeddedResource Include="Resources\FemaleNames.txt" />
+    <EmbeddedResource Include="Resources\IgnoreWords.txt" />
+    <EmbeddedResource Include="Resources\MaleNames.txt" />
+    <EmbeddedResource Include="Resources\Nouns.txt" />
+    <EmbeddedResource Include="Resources\StreetNames.txt" />
+    <EmbeddedResource Include="Resources\Surnames.txt" />
+    <EmbeddedResource Include="Resources\TownNames.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
