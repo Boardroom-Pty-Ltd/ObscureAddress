@@ -36,9 +36,7 @@ namespace ObscureAddress.Model
 			if (compare == null)
 				return false;
 
-			if (Id != compare.Id || Name != compare.Name ||
-				Line1 != compare.Line1 || Line2 != compare.Line2 || Line3 != compare.Line3 || Line4 != compare.Line4 || Line5 != compare.Line5 || Line6 != compare.Line6 ||
-				Postcode != compare.Postcode || Domicile != compare.Domicile || Type != compare.Domicile)
+			if (Id != compare.Id || Name != compare.Name || Line1 != compare.Line1 || Line2 != compare.Line2 || Line3 != compare.Line3 || Line4 != compare.Line4 || Line5 != compare.Line5 || Line6 != compare.Line6 || Postcode != compare.Postcode || Domicile != compare.Domicile || Domicile != compare.Domicile)
 				return false;
 
 			return true;

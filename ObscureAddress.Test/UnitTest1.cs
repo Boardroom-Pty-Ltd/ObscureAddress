@@ -14,7 +14,7 @@ namespace ObscureAddress.Test
 		[TestMethod]
 		public void TestInvestorData()
 		{
-			bool createOutputFile = false;
+			bool createOutputFile = true;
 
 			try
 			{
@@ -25,7 +25,7 @@ namespace ObscureAddress.Test
 				var csvFilePath = dataFilesDirectory.FullName + "\\investor_input.csv";
 				var outputFilePath = dataFilesDirectory.FullName + "\\investor_output.csv";
 				if (!File.Exists(csvFilePath.ToLower()))
-					Assert.Fail("Directory not exists.");
+					Assert.Fail("Input file not exists.");
 				if (File.Exists(outputFilePath.ToLower()))
 					File.Delete(outputFilePath);
 
@@ -36,6 +36,7 @@ namespace ObscureAddress.Test
 				var stringBuilder = new StringBuilder();
 
 				int failedCount = 0;
+				int totalCount = 0;
 				for (int i = 0; i < lines.Length; i += 2)
 				{
 					try
@@ -49,6 +50,7 @@ namespace ObscureAddress.Test
 						var expectedOutput = SplitCsvToFields(line2);
 						var isTested = TestInvestorPair(input, expectedOutput, (createOutputFile ? stringBuilder : null));
 						if (!isTested) failedCount++;
+						totalCount++;
 					}
 					catch (Exception ex)
 					{
@@ -62,7 +64,7 @@ namespace ObscureAddress.Test
 				}
 
 				if (failedCount > 0)
-					Assert.Fail(failedCount + " cases have been failed.");
+					Assert.Fail(failedCount + " cases have been failed out of " + totalCount + " cases.");
 			}
 			catch (Exception ex)
 			{
@@ -166,9 +168,11 @@ namespace ObscureAddress.Test
 				if (stringBuilder != null)
 				{
 					var resultInput = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10}", input[0], "\"" + input[1] + "\"", "\"" + input[2] + "\"", "\"" + input[3] + "\"", "\"" + input[4] + "\"", "\"" + input[5] + "\"", "\"" + input[6] + "\"", "\"" + input[7] + "\"", "\"" + input[8] + "\"", "\"" + input[9] + "\"", "\"" + input[10] + "\"");
+					var expectedInput = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10}", expectedResult.Id, "\"" + expectedResult.Name + "\"", "\"" + expectedResult.Line1 + "\"", "\"" + expectedResult.Line2 + "\"", "\"" + expectedResult.Line3 + "\"", "\"" + expectedResult.Line4 + "\"", "\"" + expectedResult.Line5 + "\"", "\"" + expectedResult.Line6 + "\"", "\"" + expectedResult.Postcode + "\"", "\"" + expectedResult.Domicile + "\"", "\"" + expectedResult.Type + "\"");
 					var resultOutput = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10}", result.Data.Id, "\"" + result.Data.Name + "\"", "\"" + result.Data.Line1 + "\"", "\"" + result.Data.Line2 + "\"", "\"" + result.Data.Line3 + "\"", "\"" + result.Data.Line4 + "\"", "\"" + result.Data.Line5 + "\"", "\"" + result.Data.Line6 + "\"", "\"" + result.Data.Postcode + "\"", "\"" + result.Data.Domicile + "\"", "\"" + result.Data.Type + "\"");
 
 					stringBuilder.AppendLine(resultInput);
+					stringBuilder.AppendLine(expectedInput);
 					stringBuilder.AppendLine(resultOutput);
 					stringBuilder.AppendLine("");
 				}
